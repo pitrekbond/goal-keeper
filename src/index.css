@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  html,
+  body {
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  input[type="file"] {
+    width: 96px;
+    color: transparent;
+  }
+}
+
+@layer components {
+  .spinner {
+    margin: 0 3.2rem;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid theme("colors.accent.500");
+    border-right-color: theme("colors.accent.300");
+    animation: rotate 1s infinite linear;
+  }
+
+  .small-spinner {
+    width: 16px; /* Smaller width */
+    height: 16px; /* Smaller height */
+    border: 2px solid theme("colors.accent.500"); /* Adjust border thickness */
+    border-right-color: theme("colors.accent.300");
+    border-radius: 50%;
+    animation: rotate 1s infinite linear;
+    aspect-ratio: 1;
+    display: inline-block;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+.custom-daypicker {
+  --rdp-cell-size: 32px !important;
+  --rdp-accent-color: theme("colors.accent.500") !important;
+  --rdp-background-color: theme("colors.accent.600") !important;
+  margin: 0 !important;
+}
+
+.calendar-container {
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex; /* Change to flex */
+  flex-direction: column; /* Optional: align items vertically */
+  height: 347.2px; /* ??? */
+  color: #374151;
+}
+
+.calendar-container.dark-mode {
+  background-color: #1f2937; /* Dark mode background */
+  color: white; /* Adjust text color for contrast */
+}
