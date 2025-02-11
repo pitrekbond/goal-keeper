@@ -64,11 +64,26 @@
   padding: 16px;
   display: flex; /* Change to flex */
   flex-direction: column; /* Optional: align items vertically */
-  height: 347.2px; /* ??? */
+  height: 377.2px; /* ??? */
   color: #374151;
 }
 
 .calendar-container.dark-mode {
   background-color: #1f2937; /* Dark mode background */
   color: white; /* Adjust text color for contrast */
+}
+
+/* Style for the selected day */
+.custom-daypicker .rdp-day--selected {
+  background-color: #f3f4f6; /* Use your accent color */
+  color: white; /* Ensure contrast */
+  border-radius: 50%; /* Makes the selected day a circle */
+  font-weight: bold;
+}
+
+/* Optional: Hover effect for better UX */
+.custom-daypicker .rdp-day:hover {
+  background-color: var(--rdp-background-color);
+  color: white;
+  border-radius: 50%;
 }

@@ -71,7 +71,13 @@ function TableRow({ task, currentPageTasks, currentPage }) {
           ) : (
             <div className="w-[3rem] h-[2.5rem]"></div>
           )}
-          <span className="font-bold text-center w-full">{name}</span>
+          <span
+            className={`font-semibold text-center w-full ${
+              stage === "Completed" ? "text-primary-500" : "text-accent-500"
+            }`}
+          >
+            {name}
+          </span>
           {category === "Leisure" && (
             <GlobeAltIcon className="h-6 w-6 text-gray-500" />
           )}
