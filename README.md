@@ -16,7 +16,7 @@ GoalKeeper is my second solo project, a classic to-do web app which purpose is t
      2.4 To run the project locally in development mode:
        npm run dev
 
-## Usage
+### Usage
 To be able to use the project, you need to register (if you haven't already) with your name, email and password. You'll then receive an email to confirm your 
 signup. 
 The app's main functionality is task management - to create a new task you need to click the "+ New Task" button located at the top of the page and fill in the form.
@@ -25,7 +25,7 @@ The dashboard shows some general data including the incoming tasks, latest notes
 In settings tab (accessed by clicking the person icon) the user can modify their account data, including changing their profile picture displayed in the application.
 Lastly, the user can also toggle the dark mode by clicking the moon icon.
 
-### Technologies Used
+#### Technologies Used
 The project was created in pure React, using Tailwind CSS for styling.
 
 
