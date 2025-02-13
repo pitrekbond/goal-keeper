@@ -93,6 +93,7 @@ export default function PageNav() {
           </NavLink>
         </li>
       </ul>
+      <p className="text-xs text-center">© Copyright 2025 by Piotr Tomaszek</p>
     </div>
   );
 }
